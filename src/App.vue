@@ -1,5 +1,5 @@
 <template>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair Display">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sora">
 
   <SiteHeader/>
