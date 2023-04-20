@@ -5,24 +5,30 @@
   <SiteHeader/>
   <HeroCover/>
   <HistoryBox/>
+  <div class="spacer">
+    <HistoryText/>
+  </div>
 </template>
 
 <script>
 import SiteHeader from './components/SiteHeader.vue'
 import HeroCover from './components/HeroCover.vue'
 import HistoryBox from './components/HistoryBox.vue'
+import HistoryText from './components/HistoryText.vue'
 
 export default {
   name: 'App',
   components: {
     SiteHeader,
     HeroCover,
-    HistoryBox
+    HistoryBox,
+    HistoryText
   }
 }
 </script>
 
 <style>
+
 :root{
   --white: #FFFFFF;
   --prime: #2B3B73;
@@ -45,5 +51,10 @@ html, body{
   color: var(--black);
   margin: 0px;
   text-align: left;
+}
+
+.spacer{
+  margin-top: 40px;
+  margin-bottom: 85px;
 }
 </style>
