@@ -107,14 +107,14 @@ export default {
   font-family: var(--header);
   letter-spacing: -0.035em;
   font-weight: bold;
-  font-size: 47px;
+  font-size: 51px;
 }
 
 .text h4 {
-  margin-top: -55px;
+  margin-top: -63px;
   font-family: var(--text);
   font-size: 15px;
-  font-weight: 100;
+  font-weight: lighter;
 }
 
 a {

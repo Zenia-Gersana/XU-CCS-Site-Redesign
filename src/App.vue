@@ -8,6 +8,7 @@
   <div class="spacer">
     <HistoryText/>
   </div>
+  <FooterFeet/>
 </template>
 
 <script>
@@ -15,6 +16,7 @@ import SiteHeader from './components/SiteHeader.vue'
 import HeroCover from './components/HeroCover.vue'
 import HistoryBox from './components/HistoryBox.vue'
 import HistoryText from './components/HistoryText.vue'
+import FooterFeet from './components/FooterFeet.vue'
 
 export default {
   name: 'App',
@@ -22,7 +24,8 @@ export default {
     SiteHeader,
     HeroCover,
     HistoryBox,
-    HistoryText
+    HistoryText,
+    FooterFeet
   }
 }
 </script>
@@ -55,6 +58,6 @@ html, body{
 
 .spacer{
   margin-top: 40px;
-  margin-bottom: 85px;
+  margin-bottom: 70px;
 }
 </style>

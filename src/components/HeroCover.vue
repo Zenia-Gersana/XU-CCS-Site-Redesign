@@ -31,11 +31,12 @@ export default{
 
     margin: 0px 18.5% 0px 18.5%;
     bottom: 64px;
+    border-radius: 4px;
 
     font-family: 'Arial', sans-serif;
     text-transform: uppercase;
     font-size: 64px;
-    font-weight: 700;
+    font-weight: 800;
     color: var(--prime);
 }
 

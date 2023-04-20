@@ -86,7 +86,7 @@ export default{
 .line {
   border-bottom: 4px solid var(--light);
   width: 80%;
-  margin: 20px auto;
+  margin: 15px auto;
 }
 .circles {
   position: relative;
@@ -124,10 +124,10 @@ export default{
 
 .timeline-content {
     bottom: 0;
+    font-family: var(--text);
 }
 
 .timeline-content h4 {
-    font-family: var(--header);
     font-weight: 700;
     font-size: 23px;
 
@@ -137,7 +137,6 @@ export default{
 }
 
 .timeline-content p {
-    font-family: var(--text);
     font-weight: 400;
     font-size: 23px;
     
