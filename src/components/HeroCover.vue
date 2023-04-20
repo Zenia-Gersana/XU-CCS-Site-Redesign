@@ -25,7 +25,7 @@ export default{
 .title{
     width: auto;
     height: auto;
-    padding: 5px 35px;
+    padding: 10px 35px;
     position: absolute;
     background-color: var(--white);
 

@@ -4,17 +4,20 @@
 
   <SiteHeader/>
   <HeroCover/>
+  <HistoryBox/>
 </template>
 
 <script>
 import SiteHeader from './components/SiteHeader.vue'
 import HeroCover from './components/HeroCover.vue'
+import HistoryBox from './components/HistoryBox.vue'
 
 export default {
   name: 'App',
   components: {
     SiteHeader,
-    HeroCover
+    HeroCover,
+    HistoryBox
   }
 }
 </script>
@@ -26,6 +29,9 @@ export default {
   --light: #9EABD7;
   --black: #1F1D1D;
   --acc: #B99433;
+
+  --header: "Arial", sans-serif;
+  --text: "Lexend", "Helvetica", sans-serif;
 }
 
 html, body{

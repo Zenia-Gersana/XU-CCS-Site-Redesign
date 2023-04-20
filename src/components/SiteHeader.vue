@@ -106,7 +106,7 @@ export default {
 }
 .text h3 {
   margin-top: 10px;
-  font-family: "Arial", sans-serif;
+  font-family: var(--header);
   letter-spacing: -0.035em;
   font-weight: bold;
   font-size: 47px;
@@ -114,7 +114,7 @@ export default {
 
 .text h4 {
   margin-top: -55px;
-  font-family: "Lexend", "Helvetica", sans-serif;
+  font-family: var(--text);
   font-size: 15px;
   font-weight: 100;
 }
