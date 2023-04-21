@@ -13,6 +13,10 @@
           </div>
         </div>
         <div class="options">
+          <div class="uplinks">
+            <div class="search"><img src="./assets/search.svg"><img></div>
+            <button>give to ccs</button>
+          </div>
           <div class="links">
             <button>Course Offerings</button>
             <button>About</button>
@@ -35,15 +39,49 @@ export default {
 <style scoped>
 .options{
   display: flex;
-  float: right;
-  align-items: center;
+  flex-direction: column;
   margin: 0;
+  align-items: end;
+  overflow: hidden;
+}
+
+.uplinks{
+  display: flex;
+  align-items: center;
+}
+.uplinks button{
+    width: 140px;
+    height: auto;
+    background-color: var(--acc);
+    border-radius: 3px;
+
+    border: none;
+    outline: none;
+    transition-duration: 0.2s;
+    padding: 10px 0;
+
+    font-family: var(--text);
+    font-weight: 600;
+    color: var(--white);
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.uplinks button:hover{
+    cursor: pointer;
+    background-color: var(--dacc);
+}
+
+.search{
+  padding: 0 20px 4px 20px;
+    width: 22px;
+    height: 21px;
 }
 
 .links button{
-  font-family: "Lexend", "Helvetica", sans-serif;
+  font-family: var(--text);
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 400;
   text-transform: uppercase;
 
   background-color: var(--prime);
@@ -61,7 +99,7 @@ export default {
 }
 
 .links{
-  padding: 15px 0px 0px 50px;
+  padding: 15px 0px 0px 100px;
   border-top: 1px solid var(--light);
   text-align: right;
   font-size: 16px;
@@ -76,6 +114,7 @@ export default {
 .header {
   box-sizing: border-box;
   display: flex;
+  align-items: center;
   margin-left: 18.5%;
   margin-right: 18.5%;
   height: 120px;
@@ -107,14 +146,14 @@ export default {
   font-family: var(--header);
   letter-spacing: -0.035em;
   font-weight: bold;
-  font-size: 51px;
+  font-size: 48px;
 }
 
 .text h4 {
-  margin-top: -63px;
+  margin-top: -58px;
   font-family: var(--text);
-  font-size: 15px;
-  font-weight: lighter;
+  font-size: 15.5px;
+  font-weight: 300;
 }
 
 a {

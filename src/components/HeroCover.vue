@@ -23,6 +23,7 @@ export default{
 }
 
 .title{
+    z-index: 2;
     width: auto;
     height: auto;
     padding: 10px 35px;
@@ -33,19 +34,20 @@ export default{
     bottom: 64px;
     border-radius: 4px;
 
-    font-family: 'Arial', sans-serif;
+    font-family: var(--header);
     text-transform: uppercase;
     font-size: 64px;
-    font-weight: 800;
+    font-weight: 700;
     color: var(--prime);
 }
 
 img{
+    z-index: 1;
     width: 100%;
     height: 500px;
     background-repeat: no-repeat;
-    background-position: center;
-    object-fit: cover;
+    object-position: center;
+    object-fit: cover;  
 }
 
 </style>

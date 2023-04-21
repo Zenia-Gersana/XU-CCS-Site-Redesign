@@ -1,14 +1,22 @@
 <template>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sora">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend:100,200,300,400,500,600,700,800,900">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sora:100,200,300,400,500,600,700,800,900">
+    
+  <div class="container">
+    <div class="content">  
+      <SiteHeader/>
+      <HeroCover/>
+      <HistoryBox/>
+      <div class="spacer">
+        <HistoryText/>
+      </div>
+    </div>
 
-  <SiteHeader/>
-  <HeroCover/>
-  <HistoryBox/>
-  <div class="spacer">
-    <HistoryText/>
+    <footer class ="footer">
+        <FooterFeet/>
+    </footer>
   </div>
-  <FooterFeet/>
+
 </template>
 
 <script>
@@ -38,9 +46,10 @@ export default {
   --light: #9EABD7;
   --black: #1F1D1D;
   --acc: #B99433;
+  --dacc: #97762f;
 
-  --header: "Arial", sans-serif;
-  --text: "Lexend", "Helvetica", sans-serif;
+  --header: "Sora", "Verdana", sans-serif;
+  --text: "Lexend", "Arial", sans-serif;
 }
 
 html, body{
@@ -58,6 +67,23 @@ html, body{
 
 .spacer{
   margin-top: 40px;
-  margin-bottom: 70px;
+}
+
+.container{
+  position: relative;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content{
+  flex: 1;
+}
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 </style>

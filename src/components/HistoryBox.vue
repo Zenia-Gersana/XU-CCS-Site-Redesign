@@ -86,7 +86,7 @@ export default{
 .line {
   border-bottom: 4px solid var(--light);
   width: 80%;
-  margin: 15px auto;
+  margin: -5px auto 15px auto;
 }
 .circles {
   position: relative;

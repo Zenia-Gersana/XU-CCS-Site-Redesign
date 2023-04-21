@@ -18,7 +18,7 @@ export default {
 .wrapper{
     max-height: 100%;
     max-width: 100%;
-    margin: 0px 18.5% 0px 18.5%;
+    margin: 60px 18.5% 140px 18.5%;
 }
 
 .text{
@@ -27,9 +27,9 @@ export default {
 }
 
 .text p{
-    margin: 20px 120px 0 120px;
+    margin: 0 100px 20px 100px;
     font-family: var(--text);
     font-size: 20px;
-    font-weight: 400px;
+    font-weight: 100px;
 }
 </style>
