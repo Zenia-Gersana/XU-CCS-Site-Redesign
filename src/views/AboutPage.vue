@@ -1,42 +1,33 @@
 <template>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend:100,200,300,400,500,600,700,800,900">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sora:100,200,300,400,500,600,700,800,900">
-    
-  <div id="nav">
-    <router-link to="/AboutPage"><SiteHeader/></router-link>
-    
-  </div>
-  <router-view/>
-
+   
+  <div class="AboutPage">
   <div class="container">
-    <transition name="fade">
-      <div div class="content">  
-        <ImageSlider/>
-        <HistoryBox/>
-        <CollapsibleCard/>
+    <div class="content">  
+      <HeroCover/>
+      <HistoryBox/>
+      <div class="spacer">
+        <HistoryText/>
       </div>
-    </transition>
+    </div>
 
-    <footer class ="footer">
-        <FooterFeet/>
-    </footer>
   </div>
-
+</div>
 </template>
 
 <script>
-import SiteHeader from '@/components/SiteHeader.vue'
-import ImageSlider from '@/components/ImageSlider.vue'
-import CollapsibleCard from '@/components/CollapsibleCard.vue'
-import FooterFeet from '@/components/FooterFeet.vue'
+
+import HeroCover from '@/components/HeroCover.vue'
+import HistoryBox from '@/components/HistoryBox.vue'
+import HistoryText from '@/components/HistoryText.vue'
 
 export default {
-  name: 'App',
+  name: 'AboutPage',
   components: {
-    SiteHeader,
-    ImageSlider,
-    CollapsibleCard,
-    FooterFeet
+    HeroCover,
+    HistoryBox,
+    HistoryText,
   }
 }
 </script>
@@ -81,10 +72,4 @@ html, body{
   bottom: 0;
   width: 100%;
 }
-.fade-enter-active, .fade-leave-active {
-  transition: opacity 0.5s;
-}
-.fade-enter, .fade-leave-to {
-  opacity: 0;
-}
-</style>
+</style> 

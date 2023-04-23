@@ -2,15 +2,10 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend:100,200,300,400,500,600,700,800,900">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sora:100,200,300,400,500,600,700,800,900">
     
-  <div id="nav">
-    <router-link to="/AboutPage"><SiteHeader/></router-link>
-    
-  </div>
-  <router-view/>
-
   <div class="container">
     <transition name="fade">
-      <div div class="content">  
+      <div class="content">  
+        <SiteHeader/>
         <ImageSlider/>
         <HistoryBox/>
         <CollapsibleCard/>
@@ -18,7 +13,7 @@
     </transition>
 
     <footer class ="footer">
-        <FooterFeet/>
+      <FooterFeet/>
     </footer>
   </div>
 
@@ -31,7 +26,7 @@ import CollapsibleCard from '@/components/CollapsibleCard.vue'
 import FooterFeet from '@/components/FooterFeet.vue'
 
 export default {
-  name: 'App',
+  name: 'HomeView',
   components: {
     SiteHeader,
     ImageSlider,
