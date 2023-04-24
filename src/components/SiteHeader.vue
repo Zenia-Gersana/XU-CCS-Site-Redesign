@@ -4,12 +4,12 @@
         <div class="ccs">
           <router-link to="/"><img id="logo" src="./assets/ccs.png" alt="CCS logo"></router-link>
           <div class="text">
-            <h3>
+            <router-link to="/"><h3>
               XU - CCS
-            </h3>
-            <h4>
+            </h3></router-link>
+            <router-link to="/"><h4>
               College of Computer Studies
-            </h4>
+            </h4></router-link>
           </div>
         </div>
         <div class="options">
