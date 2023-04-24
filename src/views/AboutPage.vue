@@ -28,4 +28,5 @@ export default {
 .spacer{
   margin-top: 40px;
 }
+
 </style> 

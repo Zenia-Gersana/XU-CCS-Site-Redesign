@@ -18,7 +18,7 @@ export default {
 .wrapper{
     max-height: 100%;
     max-width: 100%;
-    margin: 60px 18.5% 140px 18.5%;
+    margin: 0 18.5% 140px 18.5%;
 }
 
 .text{

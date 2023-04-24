@@ -34,15 +34,17 @@ function handleAccordion(selectedIndex) {
 </script>
 
 <template>
-  <div class="wrapper" v-for="(question, index) in questions" :key="question.title">
-    <button class="accordion" @click="() => handleAccordion(index)">
-      {{ question.title }}
-    </button>
-    <Collapse :when="questions[index].isExpanded" class="collapse">
-      <p class="answer">
-        {{ question.answer }}
-      </p>
-    </Collapse>
+  <div class="wrapper">
+    <div class="perq" v-for="(question, index) in questions" :key="question.title">
+      <button class="accordion" @click="() => handleAccordion(index)">
+        {{ question.title }}
+      </button>
+      <Collapse :when="questions[index].isExpanded" class="collapse">
+        <p class="answer">
+          {{ question.answer }}
+        </p>
+      </Collapse>
+    </div>
   </div>
 </template>
 
@@ -51,6 +53,10 @@ function handleAccordion(selectedIndex) {
   max-height: 100%;
   max-width: 100%;
   margin: 60px 18.5% 140px 18.5%;
+}
+
+.perq{
+  margin: 40px auto 60px auto;
 }
 
 .accordion {
@@ -72,7 +78,8 @@ function handleAccordion(selectedIndex) {
 }
 
 .answer {
-  margin: 0 100px 20px 100px;
+  margin: 20px inherit;
+  text-align: justify;
   font-family: var(--text);
   font-size: 20px;
   font-weight: 100px;
