@@ -2,7 +2,7 @@
   <div class="wrapper">
     <div class="header">
         <div class="ccs">
-          <img id="logo" src="./assets/ccs.png" alt="CCS logo" >
+          <router-link to="/"><img id="logo" src="./assets/ccs.png" alt="CCS logo"></router-link>
           <div class="text">
             <h3>
               XU - CCS
@@ -19,7 +19,7 @@
           </div>
           <div class="links">
             <button>Course Offerings</button>
-            <button>About</button>
+            <button><router-link to="/About">About</router-link></button>
             <button>Events</button>
             <button>Faculty</button>
             <button>Enrollment</button>
@@ -88,14 +88,8 @@ export default {
   color: var(--white);
   border: none;
   outline: none;
-  cursor: pointer;
 
   margin-left: 20px;
-  transition-duration: 0.3s;
-}
-
-.links button:hover{
-  color: var(--acc);
 }
 
 .links{
@@ -157,6 +151,15 @@ export default {
 }
 
 a {
-  color: var(--acc);
+  color: var(--white);
+  text-decoration: none;
+  transition-duration: 0.2s;
 }
+
+a:hover{
+  color: var(--acc);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
 </style>

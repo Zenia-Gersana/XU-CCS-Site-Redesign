@@ -60,6 +60,8 @@ export default{
 .content button:hover{
     cursor: pointer;
     background-color: var(--dacc);
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 .content osrs{
