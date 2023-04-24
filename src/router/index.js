@@ -11,7 +11,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 
       {
         path: '/',
-        name: 'Home',
+        name: 'HomeView',
         component: HomeView,
       }
 
