@@ -78,7 +78,7 @@ export default{
 .wrapper{
     max-height: 100%;
     max-width: 100%;
-    margin: 0 18.5%;
+    margin: 45px 18.5% 0 18.5%;
     align-items: center;
     text-align: center;
 }

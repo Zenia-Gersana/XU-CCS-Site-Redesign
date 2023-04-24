@@ -34,7 +34,6 @@ function handleAccordion(selectedIndex) {
 </script>
 
 <template>
-  <div class="wrapper">
     <div class="perq" v-for="(question, index) in questions" :key="question.title">
       <button class="accordion" @click="() => handleAccordion(index)">
         {{ question.title }}
@@ -45,18 +44,13 @@ function handleAccordion(selectedIndex) {
         </p>
       </Collapse>
     </div>
-  </div>
 </template>
 
 <style scoped>
-.wrapper{
-  max-height: 100%;
-  max-width: 100%;
-  margin: 60px 18.5% 140px 18.5%;
-}
 
 .perq{
-  margin: 40px auto 60px auto;
+  width: 100%;
+  margin: 0 0 60px 0;
 }
 
 .accordion {
@@ -65,6 +59,7 @@ function handleAccordion(selectedIndex) {
   cursor: pointer;
   padding: 18px;
   width: 100%;
+  border-radius: 3px;
   border: none;
   text-align: left;
   outline: none;

@@ -36,6 +36,7 @@ export default {
   --black: #1F1D1D;
   --acc: #B99433;
   --dacc: #97762f;
+  
   --header: "Sora", "Verdana", sans-serif;
   --text: "Lexend", "Arial", sans-serif;
   --swiper-theme-color: var(--light) !important;

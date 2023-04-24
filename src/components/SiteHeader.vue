@@ -19,7 +19,7 @@
           </div>
           <div class="links">
             <button>Course Offerings</button>
-            <button><router-link to="/About">About</router-link></button>
+            <button><router-link to="/about">About</router-link></button>
             <button>Events</button>
             <button>Faculty</button>
             <button>Enrollment</button>
@@ -70,6 +70,8 @@ export default {
 .uplinks button:hover{
     cursor: pointer;
     background-color: var(--dacc);
+    font-weight: 400;
+    letter-spacing: 1px;
 }
 
 .search{
