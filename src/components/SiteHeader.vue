@@ -70,7 +70,6 @@ export default {
 .uplinks button:hover{
     cursor: pointer;
     background-color: var(--dacc);
-    font-weight: 400;
     letter-spacing: 1px;
 }
 

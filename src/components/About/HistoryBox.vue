@@ -1,6 +1,5 @@
 +-<template>
     <div class="wrapper">
-        <h3>History</h3>
         <div class="timeline">
             <div class="timeline-item">
                 <div class="timeline-content">
@@ -78,19 +77,22 @@ export default{
 .wrapper{
     max-height: 100%;
     max-width: 100%;
-    margin: 45px 18.5% 0 18.5%;
+    padding: 0 0 30px 0;
+    margin: 60px 18.5% 10px 18.5%;
     align-items: center;
     text-align: center;
+
+    border-bottom: 2px solid var(--light);
 }
 
 .line {
-  border-bottom: 4px solid var(--light);
+  border-bottom: 3px solid var(--dacc);
   width: 80%;
   margin: -5px auto 15px auto;
 }
 .circles {
   position: relative;
-  top: 12px;
+  top: 10px;
   left: 0;
   width: 100%;
   display: flex;
@@ -103,14 +105,14 @@ export default{
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  border: 4px solid var(--light);
+  border: 3px solid var(--dacc);
   background-color: var(--white);
 }
 
 .timeline {
   position: relative;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-direction: row;
 
   width: auto;
@@ -124,22 +126,20 @@ export default{
 
 .timeline-content {
     bottom: 0;
-    font-family: var(--text);
+    font-family: var(--header);
 }
 
 .timeline-content h4 {
-    font-weight: 700;
-    font-size: 23px;
-
-    text-align: center;
+    font-weight: 1000;
+    font-size: 19px;
     text-transform: uppercase;
+    text-align: center;
     color: var(--prime);
 }
 
 .timeline-content p {
-    font-weight: 400;
-    font-size: 23px;
-    
+    font-weight: 500;
+    font-size: 17px;
     text-align: center;
 }
 
@@ -149,9 +149,9 @@ h3{
     font-weight: 600;
     font-size: 40px;
     text-align: center;
-    letter-spacing: 0.095em;
+    letter-spacing: 10px;
 
-    color: var(--prime);
+    color: var(--black);
     text-transform: uppercase;
 }
 </style>
