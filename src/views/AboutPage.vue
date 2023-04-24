@@ -8,6 +8,10 @@
         <HistoryText/>
       </div>
     </div>
+
+    <footer class ="footer">
+      <FooterFeet/>
+    </footer>
 </div>
 </template>
 
@@ -17,6 +21,7 @@ import SiteHeader from '@/components/SiteHeader.vue'
 import HeroCover from '@/components/HeroCover.vue'
 import HistoryBox from '@/components/HistoryBox.vue'
 import HistoryText from '@/components/HistoryText.vue'
+import FooterFeet from '@/components/FooterFeet.vue'
 
 export default {
   name: 'AboutPage',
@@ -25,6 +30,7 @@ export default {
     HeroCover,
     HistoryBox,
     HistoryText,
+    FooterFeet
   }
 }
 </script>
