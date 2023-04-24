@@ -29,7 +29,7 @@ export default {
 .text p{
     margin: 0 100px 20px 100px;
     font-family: var(--text);
-    font-size: 20px;
-    font-weight: 100px;
+    font-size: 18px;
+    font-weight: 350;
 }
 </style>

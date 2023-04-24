@@ -63,20 +63,24 @@ function handleAccordion(selectedIndex) {
   border: none;
   text-align: left;
   outline: none;
-  font-size: 18px;
-  font-weight: bold;
-  transition: background-color 0.6s ease;
+  font-family: var(--header);
+  font-size: 20px;
+  font-weight: 500;
+  transition: 0.4s ease;
 }
 
 .active, .accordion:hover {
   background-color: #97762f;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 .answer {
   margin: 20px inherit;
+  padding: 0 10px;
   text-align: justify;
   font-family: var(--text);
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 100px;
   background-color: #FAF9F6;
 }

@@ -28,17 +28,17 @@ export default{
     height: auto;
     padding: 10px 35px;
     position: absolute;
-    background-color: var(--white);
 
     margin: 0px 18.5% 0px 18.5%;
-    bottom: 64px;
-    border-radius: 4px;
+    bottom: 30px;
 
     font-family: var(--header);
     text-transform: uppercase;
-    font-size: 64px;
+    text-shadow: 3px 2px 6px var(--black);
+    font-style: italic;
+    font-size: 72px;
     font-weight: 700;
-    color: var(--prime);
+    color: var(--white);
 }
 
 img{
