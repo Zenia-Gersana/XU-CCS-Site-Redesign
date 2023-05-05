@@ -10,7 +10,7 @@
       </nav>
     </section>
     <main>
-      <!-- main content -->
+      <!-- if there is main content -->
     </main>
   </div>
 </template>
@@ -23,25 +23,23 @@ export default {
       activeButton: ""
     };
   }
-  // additional script content
+
 };
 </script>
 
 <style scoped>
 .events-navigation {
   padding: 0;
-  margin: 250px 0 0 0; /* add margin-top of 50px */
+  margin: 250px 0 0 0; 
 }
 
 .navigation-buttons {
   list-style: none;
   padding: 0;
-  margin: 0 auto; /* set margin to center and remove left and right margin */
+  margin: 0 auto; 
   display: flex;
   justify-content: center;
 }
-
-
 .navigation-buttons a {
   text-decoration: none;
   color: black;
@@ -54,9 +52,8 @@ export default {
   align-items: center;
 }
 .navigation-buttons li {
-  position: relative; /* set position to relative for ::after pseudo-element */
+  position: relative; 
 }
-
 .navigation-buttons li:not(:last-child)::after {
   content: '';
   position: absolute;
@@ -65,26 +62,19 @@ export default {
   transform: translateY(-50%);
   height: 50px;
   width: 1px;
-  border-right: 1px solid white; /* add border and adjust thickness and color */
+  border-right: 1px solid white; 
 }
-
-
-
-
 .navigation-buttons a.active {
   background-color: var(--prime);
   color: white;
 }
-
 .navigation-buttons a:hover {
   background-color: var(--prime);
   color: white;
 }
-
 .navigation-buttons a:first-child {
   margin-left: 0;
 }
-
 .navigation-buttons a:last-child {
   margin-right: 0;
 }

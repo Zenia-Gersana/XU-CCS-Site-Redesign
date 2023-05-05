@@ -15,7 +15,7 @@ export default {
   box-sizing: border-box;
   position: relative;
   max-width: 100%;
-  height: 200px; /* update the height to your desired value */
+  height: 200px; 
 }
 
 img {

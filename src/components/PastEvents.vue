@@ -62,33 +62,33 @@
   
   .event-image1 {
     text-align: center;
-    height: 250px; /* set a fixed height for all images */
+    height: 250px; 
   }
   .event-image2 {
     text-align: center;
-    height: 250px; /* set a fixed height for all images */
+    height: 250px; 
   }
   .event-image3 {
     text-align: center;
-    height: 250px; /* set a fixed height for all images */
+    height: 250px; 
   }
 
   .event-image4 {
     text-align: center;
-    height: 250px; /* set a fixed height for all images */
+    height: 250px; 
   }
   
   .event-image1 img {
-    max-height: 100%; /* ensure the image fills its parent container */
+    max-height: 100%; 
     max-width: 100%;
-    object-fit: cover; /* scale the image while maintaining aspect ratio */
+    object-fit: cover; 
     margin-top: -13px;
     margin-left: 140px;
   }
   .event-image2 img {
-    max-height: 100%; /* ensure the image fills its parent container */
+    max-height: 100%; 
     max-width: 100%;
-    object-fit: cover; /* scale the image while maintaining aspect ratio */
+    object-fit: cover; 
     margin-top: 39px;
   }
 
