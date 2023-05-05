@@ -2,9 +2,9 @@
     <div class="wrapper">
         <div class="content">
             <osrs>get involved</osrs>
-            <button>newsworthy</button>
-            <button onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSexBhwx9xKgcycZ_T8CNt48uvN-oSjEHkSXy0vNQgMwYeVSdg/viewform', '_blank');">mailing list</button>
-            <button onclick="window.open('https://www.facebook.com/XUCCS', '_blank');">join</button>
+            <button id="news">newsworthy</button>
+            <button id="mail" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSexBhwx9xKgcycZ_T8CNt48uvN-oSjEHkSXy0vNQgMwYeVSdg/viewform', '_blank');">mailing list</button>
+            <button id="join" onclick="window.open('https://www.facebook.com/XUCCS', '_blank');">join</button>
         </div>
     </div>
 </template>
@@ -16,6 +16,22 @@ export default{
 </script>
 
 <style scoped>
+.content #mail, .content #join{
+    display: none;
+}
+
+@media (min-width: 1000px) {
+  .content #mail{
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1300px) {
+  .content #join{
+    display: inline-block;
+  }
+}
+
 .wrapper{
     max-width: 100%;
     max-height: 100%;

@@ -57,7 +57,7 @@
       padding: 10px 0;
       position: absolute;
 
-      margin: 0px 18.5% 0px 18.5%;
+      margin: 0px 18.5%;
       bottom: 64px;
       border-radius: 4px;
 
@@ -70,6 +70,12 @@
       line-height: 72px;
       color: var(--white);
   }
+
+  @media (max-width: 1440px){
+  .title{
+    margin: 0 13.5%;
+  }
+}
 
   .swiper {
     z-index: 1;

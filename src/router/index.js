@@ -17,7 +17,7 @@ import { createRouter, createWebHistory } from 'vue-router'
       },
 
       {
-        path: '/',
+        path: '/faculty',
         name: 'Faculty',
         component: FacultyPage,
       }

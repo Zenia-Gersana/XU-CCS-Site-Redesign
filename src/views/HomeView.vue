@@ -42,6 +42,13 @@ export default {
   margin: 45px 18.5% 140px 18.5%;
 }
 
+
+@media (max-width: 1280px){
+  .flex{
+    margin: 45px 13.5% 140px 13.5%;
+  }
+}
+
 .flex card{
   width: 100%;
   margin: 0 25px 0 0;
