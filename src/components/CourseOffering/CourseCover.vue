@@ -42,7 +42,7 @@ export default{
 
 .img{
     z-index: 1;
-    max-width: auto;
+    max-width: 100%;
     max-height: 500px;
     background-repeat: no-repeat;
     object-position: center;
