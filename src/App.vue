@@ -3,12 +3,10 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sora:100,200,300,400,500,600,700,800,900">
 
   <div class="container">
-    <div class="content">
     <SiteHeader/>
     <router-link to="/"></router-link>
     <router-view></router-view>
 
-    </div>
     <footer class ="footer">
       <FooterFeet/>
     </footer>
@@ -23,7 +21,7 @@ export default {
   name: 'App',
   components: {
     FooterFeet,
-    SiteHeader
+    SiteHeader,
   }
 }
 </script>

@@ -20,7 +20,7 @@
           <div class="links">
             <button id="off">Course Offerings</button>
             <button id="abt"><router-link to="/about">About</router-link></button>
-            <button id="ev">Events</button>
+            <button id="ev"><router-link to="/events">Events</router-link></button>
             <button id="fac"><router-link to="/faculty">Faculty</router-link></button>
             <button id="enr">Enrollment</button>
           </div>
