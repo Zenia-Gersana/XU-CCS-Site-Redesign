@@ -115,6 +115,7 @@
   font-weight: bold;
   text-align: center;
   letter-spacing: 2px;
+  color: var(--black);
 }
 
 .content a {

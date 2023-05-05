@@ -43,7 +43,7 @@ export default{
 .img{
     z-index: 1;
     max-width: 100%;
-    max-height: 500px;
+    max-height: 100px;
     background-repeat: no-repeat;
     object-position: center;
     object-fit: cover;  
