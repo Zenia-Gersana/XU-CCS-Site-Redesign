@@ -25,22 +25,19 @@ export default{
     z-index: 2;
     width: auto;
     height: auto;
+    padding: 10px 35px;
     position: absolute;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
-    bottom: 50%;
-    border-radius: 4px;
 
-    font-family: "Verdana";
-    font-style: normal;
-    font-size: 80px;
+    margin: 0px 18.5% 0px 18.5%;
+    bottom: 30px;
+
+    font-family: var(--header);
+    text-transform: uppercase;
+    text-shadow: 3px 2px 6px var(--black);
+    font-style: italic;
+    font-size: 72px;
     font-weight: 700;
-    color: #FFFFFF;
+    color: var(--white);
 }
 
 .img{
