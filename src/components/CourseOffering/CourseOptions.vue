@@ -1,5 +1,3 @@
-import { Vue3Youtube } from 'vue3-youtube'
-
 <template>
     <div class="courses">
 
