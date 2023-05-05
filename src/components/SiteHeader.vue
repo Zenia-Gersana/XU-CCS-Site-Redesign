@@ -18,11 +18,11 @@
             <button>give to ccs</button>
           </div>
           <div class="links">
-            <button><router-link to="/course-offerings">Course Offerings</router-link></button>
-            <button><router-link to="/about">About</router-link></button>
-            <button>Events</button>
-            <button><router-link to="/faculty">Faculty</router-link></button>
-            <button>Enrollment</button>
+            <button id="off"><router-link to="/course-offerings">Course Offerings</router-link></button>
+            <button id="abt"><router-link to="/about">About</router-link></button>
+            <button id="ev">Events</button>
+            <button id="fac"><router-link to="/faculty"><router-link to="/faculty">Faculty</router-link></router-link></button>
+            <button id="enr">Enrollment</button>
           </div>
         </div>
     </div>
@@ -37,6 +37,34 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.links #off, .links #ev, .links #fac, .links #enr{
+  display: none;
+}
+
+@media (min-width: 860px) {
+  .links #off{
+    display: inline-block;
+  }
+}
+
+@media (min-width: 960px) {
+  .links #ev{
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1080px) {
+  .links #fac{
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1280px) {
+  .links #enr{
+    display: inline-block;
+  }
+}
+
 .options{
   display: flex;
   flex-direction: column;
@@ -92,7 +120,6 @@ export default {
 
   margin-left: 20px;
 }
-
 .links{
   padding: 15px 0px 0px 100px;
   border-top: 1px solid var(--light);
@@ -104,16 +131,23 @@ export default {
   box-sizing: border-box;
   height: auto;
   background-color: var(--prime);
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .header {
   box-sizing: border-box;
   display: flex;
   align-items: center;
-  margin-left: 18.5%;
-  margin-right: 18.5%;
+  margin: 0 18.5%;
   height: 120px;
   justify-content: space-between;
+}
+
+@media (max-width: 1440px){
+  .header{
+    margin: 0 13.5%;
+  }
 }
 
 .ccs{

@@ -44,6 +44,7 @@ export default {
 html, body{
   margin: 0;
   height: 100%;
+  font-size: 20px;
 }
 #app {
   -webkit-font-smoothing: antialiased;
