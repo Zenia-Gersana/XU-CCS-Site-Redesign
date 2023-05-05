@@ -1,25 +1,41 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import { createRouter, createWebHistory } from "vue-router";
+import SiteHeader from "../components/SiteHeader.vue";
+import UpcomingEvents from "../views/UpcomingEvents.vue";
+import SchoolCalendar from "../views/SchoolCalendar.vue";
+import PastEvents from "../views/PastEvents.vue";
 
 const routes = [
   {
-    path: '/',
-    name: 'home',
-    component: HomeView
+    path: '/siteheader',
+    name: 'SiteHeader',
+    component: SiteHeader
+  },
+
+  {
+    path: '/upcomingevents',
+    name: 'UpcomingEvents',
+    component: UpcomingEvents
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
-  }
-]
+    path: '/',
+    redirect: '/upcomingevents'
+  },
 
+  {
+    path: '/schoolcalendar',
+    name: 'SchoolCalendar',
+    component: SchoolCalendar
+  },
+  {
+    path: '/pastevents',
+    name: 'PastEvents',
+    component: PastEvents
+  },
+
+
+];
 const router = createRouter({
-  history: createWebHashHistory(),
-  routes
-})
-
-export default router
+  history: createWebHistory(process.env.BASE_URL),
+  routes,
+});
+export default router;

@@ -1,30 +1,61 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div class="container">
+    <div class="content">
+      <SiteHeader />
+      <PictureHeader />
+      <NavButtons />
+      <router-link to="/"></router-link>
+      <router-view></router-view>
+    </div>
+  </div>
 </template>
 
+<script>
+import SiteHeader from "@/components/SiteHeader.vue";
+import PictureHeader from "@/components/PictureHeader.vue";
+import NavButtons from "@/components/NavButtons.vue";
+
+
+export default {
+  name: "App",
+  components: {
+    SiteHeader,
+    PictureHeader,
+    NavButtons,
+  },
+};
+</script>
+
 <style>
+:root {
+  --white: #ffffff;
+  --prime: #2b3b73;
+  --light: #9eabd7;
+  --black: #1f1d1d;
+  --acc: #b99433;
+  --dacc: #97762f;
+
+  --header: "Sora", "Verdana", sans-serif;
+  --text: "Lexend", "Arial", sans-serif;
+  --swiper-theme-color: var(--light) !important;
+}
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  color: var(--black);
+  margin: 0px;
+  text-align: left;
 }
 
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
+.container {
+  position: relative;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 </style>
