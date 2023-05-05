@@ -1,7 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
+
     import AboutPage from '../views/AboutPage.vue'
     import HomeView from '../views/HomeView.vue'
     import FacultyPage from '../views/FacultyPage.vue'
+    import CourseOfferings from '../views/CourseOfferings.vue'
+
     const routes = [
      
       {
@@ -17,9 +20,15 @@ import { createRouter, createWebHistory } from 'vue-router'
       },
 
       {
-        path: '/',
+        path: '/faculty',
         name: 'Faculty',
         component: FacultyPage,
+      },
+
+      {
+        path: '/course-offerings',
+        name: 'CourseOfferings',
+        component: CourseOfferings,
       }
 
     ]
