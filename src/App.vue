@@ -28,6 +28,9 @@ export default {
 }
 </script>
 
+
+
+
 <style>
 :root{
   --white: #FFFFFF;
