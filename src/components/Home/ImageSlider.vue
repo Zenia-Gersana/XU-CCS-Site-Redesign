@@ -2,7 +2,7 @@
     <div class="swiper">
       <div class="title">Developing Computing Solutions That Matter</div>
       <div class="swiper-wrapper">
-        <div v-for="i in 3" :key="i" class="swiper-slide" :class="`slide--${i}`">
+        <div v-for="i in 4" :key="i" class="swiper-slide" :class="`slide--${i}`">
         </div>
       </div>
       
@@ -115,6 +115,11 @@
     background-position: 50% 70%;
   }
 
+  .slide--4 {
+    background-image: url('./assets/banner4.jpg');
+    background-size: cover;
+    background-position: 50% 70%;
+  }
   
   </style>
   
