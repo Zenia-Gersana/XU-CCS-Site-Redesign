@@ -1,8 +1,8 @@
 import { createRouter, createWebHistory } from "vue-router";
 import SiteHeader from "../components/SiteHeader.vue";
-import UpcomingEvents from "../views/UpcomingEvents.vue";
-import SchoolCalendar from "../views/SchoolCalendar.vue";
-import PastEvents from "../views/PastEvents.vue";
+import UpcomingEvents from "../components/UpcomingEvents.vue";
+import SchoolCalendar from "../components/SchoolCalendar.vue";
+import PastEvents from "../components/PastEvents.vue";
 
 const routes = [
   {

@@ -16,8 +16,9 @@ import PictureHeader from "@/components/PictureHeader.vue";
 import NavButtons from "@/components/NavButtons.vue";
 
 
+
 export default {
-  name: "App",
+  name: 'App',
   components: {
     SiteHeader,
     PictureHeader,

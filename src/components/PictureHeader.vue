@@ -24,6 +24,6 @@ img {
   max-height: 394px;
   background-repeat: no-repeat;
   object-position: center;
-  object-fit: cover; /* added property */
+  object-fit: cover; 
 }
 </style>

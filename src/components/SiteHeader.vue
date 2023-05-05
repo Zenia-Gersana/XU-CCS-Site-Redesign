@@ -1,4 +1,4 @@
-modify code to make the siteheader unchanged even when screen is minimized:                                                    <template>
+<template>
   <div class="wrapper">
     <div class="header">
         <div class="ccs">

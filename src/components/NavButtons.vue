@@ -53,6 +53,22 @@ export default {
   border-radius: 0px;
   align-items: center;
 }
+.navigation-buttons li {
+  position: relative; /* set position to relative for ::after pseudo-element */
+}
+
+.navigation-buttons li:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  height: 50px;
+  width: 1px;
+  border-right: 1px solid white; /* add border and adjust thickness and color */
+}
+
+
 
 
 .navigation-buttons a.active {
