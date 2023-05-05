@@ -1,8 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
+
     import AboutPage from '../views/AboutPage.vue'
     import HomeView from '../views/HomeView.vue'
     import FacultyPage from '../views/FacultyPage.vue'
     import EventsPage from "../views/EventsPage.vue"
+    import CourseOfferings from "../views/CourseOfferings.vue";
     import UpcomingEvents from "../components/Events/UpcomingEvents.vue";
     import SchoolCalendar from "../components/Events/SchoolCalendar.vue";
     import PastEvents from "../components/Events/PastEvents.vue";
@@ -29,6 +31,12 @@ const router = createRouter({
       },
 
       {
+        path: '/offer',
+        name: 'CourseOfferings',
+        component: CourseOfferings,
+      },
+
+      {
         path: '/events',
         name: 'Events',
         component: EventsPage,
@@ -51,6 +59,7 @@ const router = createRouter({
         ]
       },
     ]
+    
 })
 
 export default router;

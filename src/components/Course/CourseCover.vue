@@ -3,7 +3,7 @@
         <div class="title">
             Course Offerings
         </div>
-        <img src="./pics/header.jpg">
+        <img src="./assets/header.jpg">
     </div>
 </template>
 
