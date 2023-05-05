@@ -1,7 +1,7 @@
 <template>
-  <div class="container">
-      <CourseCover/>
-      <CourseOptions/>     
+  <div class="compilation">
+      <CourseCover/>    
+      <CourseOptions/>
   </div>
 </template>
 
