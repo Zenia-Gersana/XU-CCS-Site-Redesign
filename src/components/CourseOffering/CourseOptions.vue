@@ -1,170 +1,114 @@
 <template>
-    <div class="courses">
-
-     <div class="credentials">
-        {{ courseCredentials }}
-        <br />
-        {{ accreditation }}
-        <br />
-        Click to watch the video
-        <br />
-        {{ contact }}
-     </div>
-     <div class="video-container">
-      <div class="video-slider" ref="slider">
-        <div class="video-slide" v-for="(video, index) in videoList" :key="index">
-          <Vue3Youtube :video-id="video" />
-        </div>
+  <div>
+    <div class="cs">
+      <h1 class = "title">BS in Computer Science</h1>
+      <p class = "content">
+        PAASCU Level 1 accredited | For inquiries: <a href="mailto:cs@xu.edu.ph"> cs@xu.edu.ph </a>
+      </p>
+      <div class="video-wrapper">
+        <vue-plyr>
+            <div 
+            data-plyr-provider="youtube"
+            data-plyr-embed-id="DP4bpEyn124">
+            </div>
+        </vue-plyr>
       </div>
-      <button class="prev-button" @click="prevVideo">&#10094;</button>
-      <button class="next-button" @click="nextVideo">&#10095;</button>
     </div>
 
+    <div class="is">
+      <h1 class = "title">BS in Information Systems</h1>
+      <h3 class = "content">
+        PAASCU Level 1 accredited | For inquiries: <a href="mailto:is@xu.edu.ph"> is@xu.edu.ph </a>
+      </h3>
+      <div class="video-wrapper">
+        <vue-plyr>
+            <div 
+            data-plyr-provider="youtube"
+            data-plyr-embed-id="TGw1quRFmlQ">
+            </div>
+        </vue-plyr>
+      </div>
     </div>
+
+    <div class="it">
+      <h1 class = "title">BS in Information Technology</h1>
+      <h3 class = "content">
+        For inquiries: <a href="mailto:it@xu.edu.ph"> it@xu.edu.ph </a>
+      </h3>
+      <div class="video-wrapper">
+        <vue-plyr>
+            <div 
+            data-plyr-provider="youtube"
+            data-plyr-embed-id="V-VM7pFhnso">
+            </div>
+        </vue-plyr>
+      </div>
+    </div>
+
+    <div class="emc">
+      <h1 class = "title">BS in Entertainment and Multimedia Computing</h1>
+      <h3 class = "content">
+        For inquiries: <a href="mailto:computerstudies@xu.edu.ph"> computerstudies@xu.edu.ph </a>
+      </h3>
+      <div class="video-wrapper">
+        <vue-plyr>
+            <div 
+            data-plyr-provider="youtube"
+            data-plyr-embed-id="Xkw0UKGWdac">
+            </div>
+        </vue-plyr>
+      </div>
+    </div>
+
+    <div class="mit">
+     <h1 class = "title">Master in Information Technology</h1>
+      <h3 class = "content">
+        For inquiries: <a href="mailto:computerstudies@xu.edu.ph"> computerstudies@xu.edu.ph </a>
+      </h3>
+      <div class="video-wrapper">
+        <vue-plyr>
+            <div 
+            data-plyr-provider="youtube"
+            data-plyr-embed-id="NoEnzNFXEg8">
+            </div>
+        </vue-plyr>
+      </div>
+    </div>
+  </div>
 </template>
 
-
-<script>
-import { Vue3Youtube } from "vue3-youtube";
-
-export default {
-  components: {
-    Vue3Youtube,
-  },
-  props: {
-    courseType: {
-      type: String,
-      required: true,
-      validator: (value) => {
-        return ["cs", "is", "it", "emc", "mit"].includes(value.toLowerCase());
-      },
-    },
-  },
-  data() {
-    return {
-      videoList: ["DP4bpEyn124", "TGw1quRFmlQ", "V-VM7pFhnso", "Xkw0UKGWdac"], 
-      currentVideoIndex: 0,
-      slideWidth: 0,
-    };
-  },
-  computed: {
-    courseCredentials() {
-      switch (this.courseType.toLowerCase()) {
-        case "cs":
-          return "BS Computer Science";
-        case "is":
-          return "BS Information Systems";
-        case "it":
-          return "BS Information Technology";
-        case "emc":
-          return "BS Entertainment and Multimedia Computing";
-        case "mit":
-          return "Master in Information Technology";
-        default:
-          return "";
-      }
-    },
-    accreditation() {
-      switch (this.courseType.toLowerCase()) {
-        case "cs":
-        case "is":
-          return "PAASCU Level 1 accredited";
-        default:
-          return "";
-      }
-    },
-    contact() {
-      switch (this.courseType.toLowerCase()) {
-        case "cs":
-          return "Contact: cs@xu.edu.ph";
-        case "is":
-          return "Contact: is@xu.edu.ph";
-        case "it":
-        case "emc":
-        case "mit":
-          return "Contact: computerstudies@xu.edu.ph";
-        default:
-          return "";
-      }
-    },
-  },
-  mounted() {
-    this.slideWidth = this.$refs.slider.clientWidth;
-  },
-  methods: {
-    prevVideo() {
-      if (this.currentVideoIndex === 0) {
-        this.currentVideoIndex = this.videoList.length - 1;
-      } else {
-        this.currentVideoIndex--;
-      }
-      this.scrollToCurrentVideo();
-    },
-    nextVideo() {
-      if (this.currentVideoIndex === this.videoList.length - 1) {
-        this.currentVideoIndex = 0;
-      } else {
-        this.currentVideoIndex++;
-      }
-      this.scrollToCurrentVideo();
-    },
-    scrollToCurrentVideo() {
-      const slider = this.$refs.slider;
-      slider.style.transform = `translateX(-${this.currentVideoIndex * this.slideWidth}px)`;
-    },
-  },
-};
-</script>
-
 <style>
-  .course {
-    margin-bottom: 50px;
-  }
 
-  .credentials {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
+.video-wrapper{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  .video-container {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    overflow: hidden;
-  }
+.title{
+  font-family: "Verdana";
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
 
-  .video-slider {
-    display: flex;
-    width: calc(100% * 3);
-    transition: transform 0.3s ease-in-out;
-  }
+.content{
+  font-family: "Verdana";
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
 
-  .video-slide {
-    width: calc(100% / 3);
-    padding-right: 20px;
-    box-sizing: border-box;
-  }
-
-  .prev-button,
-  .next-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 30px;
-    background-color: transparent;
-    border: none;
-    color: #ffffff;
-    cursor: pointer;
-    z-index: 1;
-  }
-
-  .prev-button {
-    left: 0;
-  }
-
-  .next-button {
-    right: 0;
-  }
+.info a {
+  font-size: 15px;
+  font-weight: normal;
+  color: var(--white);
+}
+.info a:hover {
+  color: var(--acc);
+}
 </style>

@@ -19,35 +19,39 @@ export default{
     position: relative;
     max-height: 100%;
     max-width: 100%;
-    height: 500px;
 }
 
 .title{
     z-index: 2;
     width: auto;
     height: auto;
-    padding: 10px 35px;
     position: absolute;
-    background-color: var(--white);
-
-    margin: 0px 18.5% 0px 18.5%;
-    bottom: 64px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    bottom: 50%;
     border-radius: 4px;
 
-    font-family: var(--header);
-    text-transform: uppercase;
-    font-size: 64px;
+    font-family: "Verdana";
+    font-style: normal;
+    font-size: 80px;
     font-weight: 700;
-    color: var(--prime);
+    color: #FFFFFF;
 }
 
-img{
+.img{
     z-index: 1;
     width: 100%;
     height: 500px;
     background-repeat: no-repeat;
     object-position: center;
     object-fit: cover;  
+    
+    filter: brightness(75%);
 }
 
 </style>
