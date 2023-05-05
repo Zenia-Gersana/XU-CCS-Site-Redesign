@@ -3,7 +3,7 @@
         <div class="title">
             Course Offerings
         </div>
-        <img src="./assets/header.jpg">
+            <img src="./assets/college.jpg">
     </div>
 </template>
 
@@ -45,8 +45,8 @@ export default{
 
 .img{
     z-index: 1;
-    width: 100%;
-    height: 500px;
+    max-width: auto;
+    max-height: 500px;
     background-repeat: no-repeat;
     object-position: center;
     object-fit: cover;  
