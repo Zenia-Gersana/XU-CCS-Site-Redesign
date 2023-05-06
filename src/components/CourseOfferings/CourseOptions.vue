@@ -122,7 +122,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
   .course {
     margin-bottom: 50px;
   }

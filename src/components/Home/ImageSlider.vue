@@ -57,12 +57,14 @@
       padding: 10px 0;
       position: absolute;
 
-      margin: 0px 18.5%;
+      margin-left: 18.5%;
+      margin-right: 18.5%;
       bottom: 64px;
       border-radius: 4px;
 
       font-family: var(--header);
       font-style: italic;
+      text-align: left;
       text-transform: uppercase;
       text-shadow: 5px 2px 10px var(--black);
       font-size: 78px;

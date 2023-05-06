@@ -33,7 +33,6 @@ export default {
 .flex{
   display: flex;
   align-items: top;
-  text-align: center;
   flex-direction: row;
   justify-content: space-between;
 
@@ -56,10 +55,6 @@ export default {
 
 .flex fb{
   margin: 0 0 0 0;
-}
-
-.content{
-  flex: 1;
 }
 
 </style>

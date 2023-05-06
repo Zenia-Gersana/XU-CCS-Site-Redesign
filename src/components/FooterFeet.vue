@@ -20,13 +20,13 @@ export default{
     display: none;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1100px) {
   .content #mail{
     display: inline-block;
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1500px) {
   .content #join{
     display: inline-block;
   }

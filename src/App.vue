@@ -68,4 +68,7 @@ html, body{
   flex-direction: column;
 }
 
+.content{
+  flex: 1;
+}
 </style>
