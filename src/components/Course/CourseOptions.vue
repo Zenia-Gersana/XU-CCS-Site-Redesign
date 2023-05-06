@@ -15,6 +15,9 @@
       </div>
     </div>
 
+    <br/>
+    <div class="divider"></div>
+
     <div class="is">
       <h1 class = "title">BS in Information Systems</h1>
       <h3 class = "content">
@@ -29,6 +32,9 @@
         </vue-plyr>
       </div>
     </div>
+
+    <br/>
+    <div class="divider"></div>
 
     <div class="it">
       <h1 class = "title">BS in Information Technology</h1>
@@ -45,11 +51,16 @@
       </div>
     </div>
 
+    <br/>
+    <div class="divider"></div>
+
     <div class="emc">
       <h1 class = "title">BS in Entertainment and Multimedia Computing</h1>
-      <h3 class = "content">
-        For inquiries: <a href="mailto:computerstudies@xu.edu.ph"> computerstudies@xu.edu.ph </a>
-      </h3>
+      <div class = "content">
+        <h3>
+          For inquiries: <a href="mailto:computerstudies@xu.edu.ph"> computerstudies@xu.edu.ph </a>
+        </h3>
+      </div>
       <div class="video-wrapper">
         <vue-plyr>
             <div 
@@ -59,6 +70,9 @@
         </vue-plyr>
       </div>
     </div>
+
+    <br/>
+    <div class="divider"></div>
 
     <div class="mit">
      <h1 class = "title">Master in Information Technology</h1>
@@ -87,28 +101,35 @@
 
 .title{
   font-family: "Verdana";
-  font-size: 50px;
+  font-size: 40px;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
+  color: #6B2685
 }
 
 .content{
   font-family: "Verdana";
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   text-align: center;
-  text-transform: uppercase;
   letter-spacing: 2px;
+  color: var(--black);
 }
 
-.info a {
-  font-size: 15px;
+.content a {
+  font-size: 24px;
   font-weight: normal;
-  color: var(--white);
+  color: #6C9BCF;
 }
-.info a:hover {
-  color: var(--acc);
+.content a:hover {
+  color: var(--dacc);
+}
+
+.divider {
+  border-bottom: 4px solid var(--dacc);
+  width: 80%;
+  margin: 0 auto;
 }
 </style>
