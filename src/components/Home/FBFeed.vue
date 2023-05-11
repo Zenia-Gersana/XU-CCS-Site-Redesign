@@ -1,6 +1,5 @@
 <template>
     <div class="wrapper">
-        <h2>Student council</h2>
         <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FXU.CSSC%2F&show_posts=true&width=400&height=700&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" 
             width="400" 
             height="700" 
@@ -33,10 +32,6 @@ h2{
     text-transform: uppercase;
 }
 
-iframe{
-    padding: 10px;
-}
-
 .wrapper{
     display: flex;
     flex-direction: column;
@@ -45,6 +40,5 @@ iframe{
     padding: 0 20px;
     text-align: center;
     align-content: center;
-    border-left: 2px solid var(--light);
 }
 </style>

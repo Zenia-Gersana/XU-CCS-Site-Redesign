@@ -4,8 +4,10 @@
 
   <div class="container">
     <SiteHeader/>
-    <router-link to="/"></router-link>
-    <router-view></router-view>
+    <div class="box">
+      <router-link to="/"></router-link>
+      <router-view></router-view>
+    </div>
 
     <footer class ="footer">
       <FooterFeet/>
@@ -68,7 +70,8 @@ html, body{
   flex-direction: column;
 }
 
-.content{
+.box{
   flex: 1;
+  margin-bottom: 140px;
 }
 </style>

@@ -1,27 +1,28 @@
 <template>
     <div class="wrapper">
         <div class="title-dean">
-            <p>DEAN</p>
-        </div>
+                DEAN
+            </div>
+        <div class="content">
+            <div class="dean">
+                <div class="pic-dean">
+                    <img src="./assets/Apag.jpg" alt="Ma'am Meldie Apag">
+                </div>
 
-        <div class="pic-dean">
-            <img src="./assets/Apag.jpg" alt="Ma'am Meldie Apag">
-        </div>
+                <div class="info-dean">
+                    <h1>Dr. Meldie A. Apag</h1>
+                    <!-- Placeholder text for some information about the dean -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quod temporibus tenetur eligendi odit corporis, accusantium ipsam, 
+                        maiores similique architecto perspiciatis qui excepturi voluptate. 
+                        Obcaecati porro sed voluptates accusamus eius a.
+                    </p>
 
-        <div class="info-dean">
-            <h1>Dr. Meldie A. Apag</h1>
-            <!-- Placeholder text for some information about the dean -->
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Quod temporibus tenetur eligendi odit corporis, accusantium ipsam, 
-                maiores similique architecto perspiciatis qui excepturi voluptate. 
-                Obcaecati porro sed voluptates accusamus eius a.
-            </p>
-
-            <p>
-                <a href="mailto:mapag@xu.edu.ph">
-                    mapag@xu.edu.ph
-                </a>
-            </p>
+                    <h4><a href="mailto:mapag@xu.edu.ph">
+                        mapag@xu.edu.ph
+                    </a></h4>
+                </div>
+            </div>
         </div>
 
         <div class="divider"></div>
@@ -35,39 +36,40 @@
 </script>
 
 <style scoped>
+    .content{
+        display: flex;
+        justify-content: space-around;
+    }
 
     .wrapper{
         position: relative;
         max-width: 100%;
         max-height: 100%;
     }
+
+    .dean{
+        width: auto;
+        padding: 0 0 5% 0;
+    }
     
     .title-dean {
-        font-family: var(--header);
-        font-size: 80px;
-        margin: 0;
-
         position: absolute;
-        width: 310px;
-        height: 103px;
-        left: 150px;
-        bottom: 470px;
+        margin: 60px 10% -35px 10%;
+        padding-left: 30px;
+        position: relative;
+        letter-spacing: 4px;
 
         font-style: normal;
-        font-weight: 600;
-        font-size: 90px;
-        line-height: 109px;
+        font-weight: bolder;
+        font-family: var(--header);
+        font-size: 80px;
 
         color: #6B2685;
     }
 
     .pic-dean {
         z-index: 2;
-        position: relative;
-        left: 450px;
-        top: 70px;
-        width: auto;
-        object-fit: contain;
+        position: absolute;
     }
 
     .pic-dean img {
@@ -78,16 +80,15 @@
         z-index: 1;
         position: relative;
         width: 450px;
-        height: 235px;
-        left: 710px;
-        bottom: 140px;
-        padding-left: 60px;
-        padding-top: 10px;
-        padding-right: 40px;
-        padding-bottom: 15px;
-        margin-bottom: 0;
+        height: auto;
+        border-radius: 10px;
 
-        background: #324994;
+        padding: 10px 30px 10px 60px;
+        margin: 70px 0 0 270px;
+        text-align: justify;
+        text-justify: inter-word;
+
+        background: var(--prime);
     }
 
     .info-dean h1 {
@@ -99,24 +100,28 @@
 
     .info-dean p {
         font-family: var(--text);
-        text-align: start;
         line-height: 22px;
 
         color: #FFFFFF;
     }
 
     .info-dean a {
-        font-family: var(--text);
-        text-align: start;
-
-        color: #FFFFFF;
+      color: var(--acc); 
+      text-decoration: none;
+      transition-duration: 0.2s;
     }
 
-    .info-dean a:hover {
-        font-family: var(--text);
-        text-align: start;
 
-        color: var(--acc);
+    .info-dean a:hover {
+        color: var(--light);
+        letter-spacing: 4px;
+    }
+
+    .info-dean h4 {
+      margin: 22px 0 12px 0;
+      font-size: 22px;
+      letter-spacing: 2px;
+      font-weight: bolder;
     }
 
     .divider {
