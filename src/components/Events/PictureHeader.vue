@@ -15,13 +15,13 @@ export default {
   box-sizing: border-box;
   position: relative;
   max-width: 100%;
-  height: 200px; 
+  height: 400px; 
 }
 
 img {
   z-index: 1;
   width: 100%;
-  max-height: 394px;
+  max-height: 400px;
   background-repeat: no-repeat;
   object-position: center;
   object-fit: cover; 

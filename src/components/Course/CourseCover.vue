@@ -40,15 +40,13 @@ export default{
     color: var(--white);
 }
 
-.img{
+img{
     z-index: 1;
-    max-width: 100%;
-    max-height: 100px;
+    width: 100%;
+    height: 500px;
     background-repeat: no-repeat;
     object-position: center;
     object-fit: cover;  
-    
-    filter: brightness(75%);
 }
 
 </style>

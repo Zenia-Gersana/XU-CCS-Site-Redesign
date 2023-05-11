@@ -28,15 +28,13 @@ export default {
 }
 </script>
 
-
-
-
 <style>
 :root{
   --white: #FFFFFF;
   --prime: #2B3B73;
   --light: #9EABD7;
   --black: #1F1D1D;
+  --gray: #dfdfe2;
   --acc: #B99433;
   --dacc: #97762f;
   
@@ -67,11 +65,12 @@ html, body{
   position: relative;
   display: flex;
   min-height: 100vh;
+  max-height: 100%;
   flex-direction: column;
 }
 
 .box{
   flex: 1;
-  margin-bottom: 140px;
+  margin-bottom: 100px;
 }
 </style>

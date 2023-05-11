@@ -1,7 +1,7 @@
 {
   "name": "xu-ccs",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0",
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -15,8 +15,6 @@
     "vue-collapsed": "^1.1.2",
     "vue-plyr": "^7.0.0",
     "vue-router": "^4.1.6",
-    "vue3-rich-accordion": "^0.0.7",
-    "vue3-youtube": "^0.1.9",
     "vuetify": "^3.1.15"
   },
   "devDependencies": {

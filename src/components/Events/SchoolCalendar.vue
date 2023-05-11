@@ -1,6 +1,6 @@
 <template>
-    <div class ="title">
-    <h1>2022-2023 School Calendar</h1>
+  <div class ="etitle">
+    SY 2022-2023
   </div>
     <div class="calendar">
       <div class="calendar-image">
@@ -33,11 +33,5 @@
     margin-top: 30px;
     text-align: center;
   }
-
-  .title {
-  margin-top: 130px;
-  text-align: center;
-  font-family: "Lato", sans-serif;
-}
   </style>
   

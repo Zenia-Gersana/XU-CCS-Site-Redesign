@@ -19,7 +19,7 @@
   import OtherFaculty from "@/components/Faculty/OtherFaculty.vue"
   
   export default {
-    name: 'App',
+    name: 'FacultyPage',
     components: {
       FacultyCover,
       DeanInfo,
@@ -86,9 +86,9 @@
       margin: 22px 0 12px 0;
       font-size: 18px;
       letter-spacing: 1px;
-      font-weight: bolder;
+      font-weight: 400;
   }
-  
+
   .info a {
       color: var(--acc); 
       text-decoration: none;

@@ -118,6 +118,7 @@
     }
 
     .info-dean h4 {
+        font-family: var(--text);
       margin: 22px 0 12px 0;
       font-size: 22px;
       letter-spacing: 2px;
