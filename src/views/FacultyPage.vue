@@ -26,11 +26,7 @@
       DeanInfo,
       ChairCoor,
       OtherFaculty,
-<<<<<<< HEAD
       AdminAssist
-=======
-      AdminAssist,
->>>>>>> 4ac626503ca0b92c556c886adb2a2fd85ee7c9e9
   }
   }
   </script>
