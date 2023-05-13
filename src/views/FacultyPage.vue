@@ -5,6 +5,7 @@
         <DeanInfo/>
         <ChairCoor/>
         <OtherFaculty/>
+        <AdminAssist/>
       </div>
   
     </div>
@@ -15,6 +16,7 @@
   import DeanInfo from "@/components/Faculty/DeanInfo.vue";
   import ChairCoor from "@/components/Faculty/ChairCoor.vue"
   import OtherFaculty from "@/components/Faculty/OtherFaculty.vue"
+  import AdminAssist from "@/components/Faculty/AdminAssist.vue"
   
   export default {
     name: 'App',
@@ -23,6 +25,7 @@
       DeanInfo,
       ChairCoor,
       OtherFaculty,
+      AdminAssist
   }
   }
   </script>
