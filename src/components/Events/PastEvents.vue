@@ -1,6 +1,6 @@
 <template>
-  <div class="title">
-    <h1>Past Events</h1>
+  <div class="etitle">
+    Past Events
   </div>
   <div class="past-events">
     <div class="row1">
@@ -57,7 +57,7 @@
   
   <style scoped>
   .past-events {
-    padding: 50px;
+    padding: 0 50px 50px 50px;
   }
   
   .event-image1 {
@@ -143,10 +143,5 @@
     justify-content: center;
     align-items: center;
   }
-  .title {
-  margin-top: 130px;
-  text-align: center;
-  font-family: "Lato", sans-serif;
-}
   </style>
   

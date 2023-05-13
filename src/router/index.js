@@ -20,7 +20,7 @@ const router = createRouter({
 
       {
         path: '/',
-        name: 'HomeView',
+        name: 'College of Computer Studies',
         component: HomeView,
       },
 
@@ -32,7 +32,7 @@ const router = createRouter({
 
       {
         path: '/offer',
-        name: 'CourseOfferings',
+        name: 'Course Offerings',
         component: CourseOfferings,
       },
 
@@ -42,19 +42,19 @@ const router = createRouter({
         component: EventsPage,
         children:[
           {
-            path: 'upcoming',
-            name: 'UpcomingEvents',
-            component: UpcomingEvents
+            path: '',
+            name: 'Upcoming Events',
+            component: UpcomingEvents,
           },
           {
             path: 'past',
-            name: 'PastEvents',
-            component: PastEvents
+            name: 'Past Events',
+            component: PastEvents,
           },
           {
             path: 'calendar',
-            name: 'SchoolCalendar',
-            component: SchoolCalendar
+            name: 'School Calendar',
+            component: SchoolCalendar,
           }
         ]
       },
@@ -63,3 +63,8 @@ const router = createRouter({
 })
 
 export default router;
+
+router.beforeEach((to, from, next) => {
+  document.title = to.name;
+  next();
+});

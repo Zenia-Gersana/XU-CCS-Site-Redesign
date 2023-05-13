@@ -1,6 +1,6 @@
 <template>
-  <div class ="title">
-    <h1> Upcoming Events</h1>
+  <div class ="etitle">
+    Upcoming Events
   </div>
   <div class="container">
     <div class="row" style="text-align: center;">
@@ -21,17 +21,17 @@
 <script>
 export default {
   name: 'UpcomingEvents'
-}
+};
 </script>
 
 <style scoped>
 /* Style for the two columns */
 .col-md-6 {
+  padding: 0;
   margin-top: 100px;
 }
-.title {
-  margin-top: 130px;
-  text-align: center;
-  font-family: "Lato", sans-serif;
+
+.row{
+  margin: 0;
 }
 </style>

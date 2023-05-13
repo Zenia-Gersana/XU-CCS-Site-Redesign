@@ -2,9 +2,9 @@
     <div class="wrapper">
         <div class="content">
             <osrs>get involved</osrs>
-            <button id="news">newsworthy</button>
-            <button id="mail" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSexBhwx9xKgcycZ_T8CNt48uvN-oSjEHkSXy0vNQgMwYeVSdg/viewform', '_blank');">mailing list</button>
-            <button id="join" onclick="window.open('https://www.facebook.com/XUCCS', '_blank');">join</button>
+            <button>newsworthy</button>
+            <button onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSexBhwx9xKgcycZ_T8CNt48uvN-oSjEHkSXy0vNQgMwYeVSdg/viewform', '_blank');">mailing list</button>
+            <button onclick="window.open('https://www.facebook.com/XUCCS', '_blank');">join</button>
         </div>
     </div>
 </template>
@@ -16,19 +16,28 @@ export default{
 </script>
 
 <style scoped>
-.content #mail, .content #join{
-    display: none;
-}
 
-@media (min-width: 1100px) {
-  .content #mail{
-    display: inline-block;
+@media (min-width: 0px) {
+  .content{
+    margin: 0 10%;
   }
 }
 
-@media (min-width: 1500px) {
-  .content #join{
-    display: inline-block;
+@media (min-width: 1280px) {
+  .content{
+    margin: 0 14%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .content{
+    margin: 0 22%;
+  }
+}
+
+@media (min-width: 1920px) {
+  .content{
+    margin: 0 30%;
   }
 }
 
@@ -38,15 +47,13 @@ export default{
     background-color: var(--prime);
 }
 
-.content{
+.content { 
     position: relative;
     display: flex;
     box-sizing: border-box;
     align-items: center;
     justify-content: space-around;
     
-    margin-left: 30%;
-    margin-right: 30%;
     width: auto;
     height: 75px;
 
@@ -65,7 +72,8 @@ export default{
     border: none;
     outline: none;
     transition-duration: 0.2s;
-    padding: 10px 0;
+    padding: 10px;
+    margin: 0 4px;
 
     font-family: var(--text);
     color: var(--white);
@@ -81,8 +89,9 @@ export default{
 }
 
 .content osrs{
-    width: 140px;
+    width: 190px;
     text-transform: uppercase;
     color: var(--white);
+    text-align: center;
 }
 </style>

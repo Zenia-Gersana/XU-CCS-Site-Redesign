@@ -91,7 +91,7 @@
   </div>
 </template>
 
-<style>
+<style scoped>
 
 .video-wrapper{
   width: 50%;

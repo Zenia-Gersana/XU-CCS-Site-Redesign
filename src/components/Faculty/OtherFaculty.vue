@@ -1,11 +1,10 @@
 <template>
     <div class="wrapper">
-        <div class="title-chaircoor">
-            <p>FACULTY</p>
+        <div class="fTitle">
+                FACULTY
         </div>
 
-        <div id="contenta">
-            
+        <div id="content">
             <div id="area">
                 <div class="pic">
                     <img src="./assets/Asuero.jpg" alt="Maya Asuero">
@@ -53,10 +52,6 @@
                     </h4>
                 </div>
             </div>
-
-        </div>
-
-        <div id="contentb">
 
             <div id="area">
                 <div class="pic">
@@ -106,10 +101,6 @@
                 </div>
             </div>
 
-        </div>
-
-        <div id="contentc">
-
             <div id="area">
                 <div class="pic">
                     <img src="./assets/Edullantes.jpg" alt="Arian Edullantes">
@@ -157,10 +148,6 @@
                     </h4>
                 </div>
             </div>
-
-        </div>
-
-        <div id="contentd">
 
             <div id="area">
                 <div class="pic">
@@ -210,10 +197,6 @@
                 </div>
             </div>
 
-        </div>
-
-        <div id="contente">
-
             <div id="area">
                 <div class="pic">
                     <img src="./assets/Fernandez.jpg" alt="Harriet Fernandez">
@@ -261,10 +244,6 @@
                     </h4>
                 </div>
             </div>
-
-            </div>
-
-            <div id="contentf">
 
                 <div id="area">
                     <div class="pic">
@@ -314,8 +293,7 @@
                     </div>
                 </div>
 
-            </div>
-
+        </div>
         <div class="divider"></div>
 
     </div>
@@ -327,84 +305,25 @@
     }
 </script>
 
-<style>
+<style scoped>
     .wrapper {
         position: relative;
         max-width: 100%;
         max-height: 100%;
     }
-    
-    .title-chaircoor { 
-        font-family: var(--header);
-        font-size: 50px;
-        margin: 0;
-        padding-left: 30px;
 
-        position: relative;
-        width: 65%;
-        height: 90px;
-        left: 10px;
-        top: -6%;
-
-        font-style: normal;
-        font-weight: 600;
-        line-height: 109px;
-
-        color: #6B2685;
+    img{
+        border-radius: 6px;
     }
 
-    .pic {
-        width: auto;
-        padding: 8px 8px 0 8px;
-    }
-
-    .info {
-        font-family: var(--text);
-        color: var(--white);
-        text-align: center;
-        overflow-wrap: normal;
-        line-height: 5px;
-    }
-
-    .info p {
-        font-size: 17px;
-        font-weight: bolder;
-    }
-
-    .info h3 {
-        font-size: 15px;
-        font-weight: normal;
-    }
-
-    .info a {
-        font-size: 15px;
-        font-weight: normal;
-        color: var(--white);
-    }
-
-    .info a:hover {
-        color: var(--acc);
-    }
-
-    #area {
-        border-radius: 10px;
-        box-sizing: content-box;
-        background-color: #324994;
-        width: 268px;
-        height: 360px;
-    }
-
-    #contenta, #contentb, #contentc, #contentd, #contente {
+    #content{
         display: flex;
-        margin: 3% 10% 0 10%;
+        flex-wrap: wrap;
         justify-content: space-around;
-    }
-
-    #contentf {
-        display: flex;
-        margin: 3% 10% 0 10%;
-        justify-content: space-around;
-        padding: 0 0 5% 0;
+        row-gap: 90px;
+        column-gap: 50px;
+        margin: 0 15%;
+        padding: 80px 0 120px 0;
     }
 
     .divider {
