@@ -17,7 +17,6 @@
   import ChairCoor from "@/components/Faculty/ChairCoor.vue"
   import AdminAssist from "@/components/Faculty/AdminAssist.vue"
   import OtherFaculty from "@/components/Faculty/OtherFaculty.vue"
-  import AdminAssist from "@/components/Faculty/AdminAssist.vue"
   
   export default {
     name: 'FacultyPage',
