@@ -7,8 +7,8 @@
 
 <script>
 
-import CourseCover from '@/components/CourseOffering/CourseCover.vue'
-import CourseOptions from '@/components/CourseOffering/CourseOptions.vue'
+import CourseCover from '@/components/Course/CourseCover.vue'
+import CourseOptions from '@/components/Course/CourseOptions.vue'
 
 export default {
   name: 'CourseOfferings',

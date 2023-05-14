@@ -3,10 +3,15 @@ import { createRouter, createWebHistory } from 'vue-router'
     import AboutPage from '../views/AboutPage.vue'
     import HomeView from '../views/HomeView.vue'
     import FacultyPage from '../views/FacultyPage.vue'
-    import CourseOfferings from '../views/CourseOfferings.vue'
+    import EventsPage from "../views/EventsPage.vue"
+    import CourseOfferings from "../views/CourseOfferings.vue";
+    import UpcomingEvents from "../components/Events/UpcomingEvents.vue";
+    import SchoolCalendar from "../components/Events/SchoolCalendar.vue";
+    import PastEvents from "../components/Events/PastEvents.vue";
 
-    const routes = [
-     
+const router = createRouter({
+  history: createWebHistory(process.env.BASE_URL),    
+    routes: [
       {
         path: '/about',
         name: 'About',
@@ -15,7 +20,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 
       {
         path: '/',
-        name: 'HomeView',
+        name: 'College of Computer Studies',
         component: HomeView,
       },
 
@@ -26,14 +31,40 @@ import { createRouter, createWebHistory } from 'vue-router'
       },
 
       {
-        path: '/course-offerings',
-        name: 'CourseOfferings',
+        path: '/offer',
+        name: 'Course Offerings',
         component: CourseOfferings,
-      }
+      },
 
+      {
+        path: '/events',
+        name: 'Events',
+        component: EventsPage,
+        children:[
+          {
+            path: '',
+            name: 'Upcoming Events',
+            component: UpcomingEvents,
+          },
+          {
+            path: 'past',
+            name: 'Past Events',
+            component: PastEvents,
+          },
+          {
+            path: 'calendar',
+            name: 'School Calendar',
+            component: SchoolCalendar,
+          }
+        ]
+      },
     ]
-    const router = createRouter({
-      history: createWebHistory(process.env.BASE_URL),
-      routes
-    })
-    export default router
+    
+})
+
+export default router;
+
+router.beforeEach((to, from, next) => {
+  document.title = to.name;
+  next();
+});

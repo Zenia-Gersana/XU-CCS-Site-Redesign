@@ -18,10 +18,10 @@
             <button>give to ccs</button>
           </div>
           <div class="links">
-            <button id="off"><router-link to="/course-offerings">Course Offerings</router-link></button>
+            <button id="off"><router-link to="/offer">Course Offerings</router-link></button>
             <button id="abt"><router-link to="/about">About</router-link></button>
-            <button id="ev">Events</button>
-            <button id="fac"><router-link to="/faculty"><router-link to="/faculty">Faculty</router-link></router-link></button>
+            <button id="ev"><router-link to="/events">Events</router-link></button>
+            <button id="fac"><router-link to="/faculty">Faculty</router-link></button>
             <button id="enr">Enrollment</button>
           </div>
         </div>

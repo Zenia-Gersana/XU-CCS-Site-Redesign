@@ -33,19 +33,18 @@ export default {
 .flex{
   display: flex;
   align-items: top;
-  text-align: center;
   flex-direction: row;
   justify-content: space-between;
 
   max-height: 100%;
   max-width: 100%;
-  margin: 45px 18.5% 140px 18.5%;
+  margin: 45px 18.5% 0 18.5%;
 }
 
 
 @media (max-width: 1280px){
   .flex{
-    margin: 45px 13.5% 140px 13.5%;
+    margin: 45px 13.5% 0 13.5%;
   }
 }
 
@@ -56,10 +55,6 @@ export default {
 
 .flex fb{
   margin: 0 0 0 0;
-}
-
-.content{
-  flex: 1;
 }
 
 </style>

@@ -3,12 +3,12 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sora:100,200,300,400,500,600,700,800,900">
 
   <div class="container">
-    <div class="content">
     <SiteHeader/>
-    <router-link to="/"></router-link>
-    <router-view></router-view>
-
+    <div class="box">
+      <router-link to="/"></router-link>
+      <router-view></router-view>
     </div>
+
     <footer class ="footer">
       <FooterFeet/>
     </footer>
@@ -23,13 +23,10 @@ export default {
   name: 'App',
   components: {
     FooterFeet,
-    SiteHeader
+    SiteHeader,
   }
 }
 </script>
-
-
-
 
 <style>
 :root{
@@ -37,6 +34,7 @@ export default {
   --prime: #2B3B73;
   --light: #9EABD7;
   --black: #1F1D1D;
+  --gray: #dfdfe2;
   --acc: #B99433;
   --dacc: #97762f;
   
@@ -67,7 +65,12 @@ html, body{
   position: relative;
   display: flex;
   min-height: 100vh;
+  max-height: 100%;
   flex-direction: column;
 }
 
+.box{
+  flex: 1;
+  margin-bottom: 100px;
+}
 </style>

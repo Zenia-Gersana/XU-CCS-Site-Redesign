@@ -1,7 +1,7 @@
 <template>
     <div class="wrapper">
-        <div class="title-chaircoor">
-            <p>CHAIRPERSONS & COORDINATORS</p>
+        <div class="fTitle">
+            CHAIRPERSONS & COORDINATORS
         </div>
 
         <div id="content1">
@@ -99,66 +99,15 @@
     }
 </script>
 
-<style>
+<style scoped>
     .wrapper {
         position: relative;
         max-width: 100%;
         max-height: 100%;
     }
-    
-    .title-chaircoor {
-        font-family: var(--header);
-        font-size: 50px;
-        margin: 0;
-        padding-left: 30px;
 
-        position: absolute;
-        width: 65%;
-        height: 90px;
-        left: 10px;
-        top: -6%;
-
-        font-style: normal;
-        font-weight: 600;
-        line-height: 109px;
-
-        color: #6B2685;
-    }
-
-    .info {
-        font-family: var(--text);
-        color: var(--white);
-        text-align: center;
-        overflow-wrap: normal;
-        line-height: 5px;
-    }
-
-    .info p {
-        font-size: 17px;
-        font-weight: bolder;
-    }
-
-    .info h3 {
-        font-size: 15px;
-        font-weight: normal;
-    }
-
-    .info a {
-        font-size: 15px;
-        font-weight: normal;
-        color: var(--white);
-    }
-
-    .info a:hover {
-        color: var(--acc);
-    }
-
-    #area {
-        border-radius: 10px;
-        box-sizing: content-box;
-        background-color: #324994;
-        width: 268px;
-        height: 360px;
+    img{
+        border-radius: 6px;
     }
 
     #content1 {
@@ -170,13 +119,8 @@
     #content2 {
         display: flex;
         margin: 3% 10% 0 10%;
-        padding: 0 0 5% 0;
+        padding: 80px 0 120px 0;
         justify-content: space-around;
-    }
-
-    .pic {
-        width: auto;
-        padding: 8px 8px 0 8px;
     }
 
     .divider {
