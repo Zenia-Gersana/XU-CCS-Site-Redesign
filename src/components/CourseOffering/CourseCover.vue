@@ -46,7 +46,7 @@ export default{
     max-height: 100px;
     background-repeat: no-repeat;
     object-position: center;
-    object-fit: cover;  
+    object-fit: fill;  
     
     filter: brightness(75%);
 }
